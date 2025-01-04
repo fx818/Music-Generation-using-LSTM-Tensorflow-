@@ -10,7 +10,7 @@ env['musicxmlPath'] = r"D:\Program Files\MuseScore 4\bin\MuseScore4.exe"
 env['musescoreDirectPNGPath'] = r"D:\Program Files\MuseScore 4\bin\MuseScore4.exe"
 
 # Standard variables
-DATASET_PATH = 'deutschl/test'
+DATASET_PATH = 'deutschl/erk'
 ACCEPTED_DURATION = [0.25, 0.5, 0.75, 1.0, 1.5, 2, 3, 4]
 SAVE_DIR = 'dataset'
 SINGLE_FILE_DATASET = 'file_dataset'
@@ -232,6 +232,7 @@ def main():
     songs = create_single_file_datasets(SAVE_DIR, SINGLE_FILE_DATASET, SEQUENCE_LENGTH)
     create_mapping(songs, MAPPING_PATH)
     inputs, targets = generate_training_sequences(SEQUENCE_LENGTH)
+
     
 
 
