@@ -6,12 +6,16 @@ This is `generative model` which when given some initial seed (starting note and
 2. `LSTM-TensorFlow`
 
 > The song data is preprocessed using python library `music21`
+
 > Then we have transpose the songs like converting them in C major and A minor
+
 > Then we have used LSTM layer to make the model
+
 > We have to give an initial seed to generate the music
 
 ### E.g. of seed
 `64 _ _ 62 _ r _ 60 _.....`
+
 Here r is rest and numbers are notes
 
 ### E.g. of generated melody
